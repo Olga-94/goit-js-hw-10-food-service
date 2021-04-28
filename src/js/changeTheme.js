@@ -18,7 +18,7 @@ function changeTheme(e) {
         localStorage.setItem('theme', Theme.LIGHT);
 }
 
-changeBody.addEventListener('click', changeTheme)
+changeBody.addEventListener('click', changeTheme);
 
 document.body.classList.add(localStorage.getItem('theme') === null ? Theme.LIGHT : localStorage.getItem('theme'),);
 changeBody.checked = localStorage.getItem('theme') === Theme.DARK;
